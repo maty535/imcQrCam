@@ -30,18 +30,9 @@ A full working demo is available in [src/main.py](https://github.com/kivy-garden
 ## Install
 
 ### Ubuntu
-Install system requirements (Ubuntu 18.04):
-```sh
-make system_dependencies
-```
-
-Install zbarcam:
-```sh
-pip install zbarcam
-```
-Then import it in your Python code via:
-```python
-from kivy_garden.zbarcam import ZBarCam
+Install aplication requirements:
+```bash
+pip install -r requirements.txt
 ```
 
 ### Android
