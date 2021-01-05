@@ -1,19 +1,19 @@
 [app]
 
 # (str) Title of your application
-title = ZBarCam Demo
+title = Imcontec uctovane doklady
 
 # (str) Package name
-package.name = zbarcamdemo
+package.name = ImcontecDoklady
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = com.github.andremiras
+package.domain = eu.imcontec.doklady
 
 # (str) Source code where the main.py live
 source.dir = src
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,kv,atlas
+source.include_exts = py,png,jpg,kv,atlas,json
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png
@@ -45,7 +45,8 @@ requirements =
     Pillow==7.0.0,
     python3==3.8.1,
     pyzbar==0.1.8,
-    xcamera==2019.928
+    xcamera==2019.928,
+    requests
 
 
 # (str) Custom source folders for requirements
@@ -95,7 +96,7 @@ fullscreen = 0
 #android.presplash_color = #FFFFFF
 
 # (list) Permissions
-android.permissions = CAMERA
+android.permissions = CAMERA, INTERNET
 
 # (int) Target Android API, should be as high as possible.
 android.api = 27
@@ -216,13 +217,13 @@ android.arch = armeabi-v7a
 #
 
 # (str) python-for-android fork to use, defaults to upstream (kivy)
-#p4a.fork = kivy
+p4a.fork = kivy
 
 # (str) python-for-android branch to use, defaults to master
-p4a.branch = v2020.04.29
+p4a.branch = v2020.06.02
 
 # (str) python-for-android git clone directory (if empty, it will be automatically cloned from github)
-#p4a.source_dir =
+p4a.source_dir =./.buildozer/android/platform/python-for-android
 
 # (str) The directory in which python-for-android should look for your own build recipes (if any)
 #p4a.local_recipes =
@@ -271,10 +272,10 @@ log_level = 2
 warn_on_root = 1
 
 # (str) Path to build artifact storage, absolute or relative to spec file
-# build_dir = ./.buildozer
+build_dir = ./.buildozer
 
 # (str) Path to build output (i.e. .apk, .ipa) storage
-# bin_dir = ./bin
+bin_dir = ./bin
 
 #    -----------------------------------------------------------------------------
 #    List as sections

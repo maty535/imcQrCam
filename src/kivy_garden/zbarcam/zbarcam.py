@@ -1,11 +1,16 @@
 import os
 from collections import namedtuple
 
+import json
+import requests
+
 import PIL
+from PIL import Image, ImageDraw
 from kivy.clock import Clock
 from kivy.lang import Builder
 from kivy.logger import Logger
 from kivy.properties import ListProperty
+from kivy.properties import DictProperty
 from kivy.uix.anchorlayout import AnchorLayout
 
 from .utils import fix_android_image
@@ -51,6 +56,14 @@ class PyZBarDecoder(ZBarDecoder):
             getattr(self.pyzbar.ZBarSymbol, code_type)
             for code_type in code_types
         )
+
+        # for code in self.pyzbar.decode(image, symbols=pyzbar_code_types):
+        #     print("QR-ID:", code.data)
+        #     rect = code.rect
+        #     draw = ImageDraw.Draw(image)
+        #     draw.polygon(code.polygon, outline='#e945ff')
+        #     image.show()
+
         return [
             ZBarCam.Symbol(type=code.type, data=code.data)
             for code in self.pyzbar.decode(
@@ -138,6 +151,7 @@ class ZBarCam(AnchorLayout):
     Symbol = namedtuple('Symbol', ['type', 'data'])
     # checking all possible types by default
     code_types = ListProperty(XZbarDecoder().get_available_code_types())
+    allScannedQR = DictProperty({})
 
     def __init__(self, **kwargs):
         # lazy loading the kv file rather than loading at module level,
@@ -150,10 +164,13 @@ class ZBarCam(AnchorLayout):
         """
         Postpones some setup tasks that require self.ids dictionary.
         """
-        self._remove_shoot_button()
+        # self._remove_shoot_button()
         # `self.xcamera._camera` instance may not be available if e.g.
         # the `CAMERA` permission is not granted
         self.xcamera.bind(on_camera_ready=self._on_camera_ready)
+        self.xcamera.bind(on_picture_taken=self._on_picture_taken)
+        self.bind(symbols=on_symbols)
+
         # camera may still be ready before we bind the event
         if self.xcamera._camera is not None:
             self._on_camera_ready(self.xcamera)
@@ -163,6 +180,12 @@ class ZBarCam(AnchorLayout):
         Starts binding when the `xcamera._camera` instance is ready.
         """
         xcamera._camera.bind(on_texture=self._on_texture)
+
+    def _on_picture_taken(self, xcamera, filename):
+        """
+        This event is fired every time a picture has been taken.
+        """
+        pass
 
     def _remove_shoot_button(self):
         """
@@ -188,6 +211,7 @@ class ZBarCam(AnchorLayout):
         pil_image = PIL.Image.frombytes(mode='RGBA', size=size,
                                         data=image_data)
         pil_image = fix_android_image(pil_image)
+
         return XZbarDecoder().decode(pil_image, code_types)
 
     @property
@@ -199,3 +223,40 @@ class ZBarCam(AnchorLayout):
 
     def stop(self):
         self.xcamera.play = False
+
+
+def on_symbols(instance, values):
+    print('found', len(values), 'symbols')
+
+    for symbol in values:
+        qrId = symbol.data.decode("utf-8")
+        print('- qrcode: {}'.format(qrId))
+        if(qrId not in instance.allScannedQR):
+            billInfo = getBillInfoFromEkasa(qrId)['receipt']
+            instance.allScannedQR[qrId] = {
+                "ico": billInfo['ico'],
+                "icdph": billInfo['icDph'],
+                "date": billInfo['issueDate'],
+                "totalPrice":billInfo['totalPrice'],
+                "vatAmountBasic":billInfo['vatAmountBasic'],
+                "taxBaseBasic":billInfo['taxBaseBasic'],
+            }
+
+    print(json.dumps(instance.allScannedQR))
+    # stop the detector if we found a symbol.
+    # don't if you want continuous detection.
+    if(len(values) > 0):
+        instance.stop()
+        instance.parent.ids.scanButton.disabled = False
+        instance.parent.ids.stopButton.disabled = True
+
+def getBillInfoFromEkasa(qrId):
+    api_url = 'https://ekasa.financnasprava.sk/mdu/api/v1/opd/receipt/find'
+    headers = {'Content-Type': 'application/json'}
+    billInfo = {"receiptId": qrId}
+    response = requests.post(api_url, headers=headers,json=billInfo)
+    
+    if response.status_code == 200:
+        return json.loads(response.content.decode('utf-8'))
+    else:
+        return None
