@@ -35,6 +35,11 @@ Install aplication requirements:
 pip install -r requirements.txt
 ```
 
+then run with:
+```bash
+python src/main.py
+```
+
 ### Android
 Build for Android via buildozer, see [buildozer.spec](buildozer.spec).
 

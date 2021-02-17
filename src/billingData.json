@@ -1,0 +1,34 @@
+{
+    "O-2594042C602941FE94042C602961FE92": {
+        "ico": "51231735",
+        "icdph": "SK7120001482",
+        "date": "23.12.2020 15:09:39",
+        "totalPrice": 5.16,
+        "vatAmountBasic": 0.86,
+        "taxBaseBasic": 4.3
+    },
+    "O-A8D3FB197C464CB893FB197C46ECB81E": {
+        "ico": "17125634",
+        "icdph": "SK1020764074",
+        "date": "09.09.2020 18:40:44",
+        "totalPrice": 10.45,
+        "vatAmountBasic": 1.74,
+        "taxBaseBasic": 8.71
+    },
+    "O-0408B5FE330740F988B5FE330770F911": {
+        "ico": "46919872",
+        "icdph": "SK2023659528",
+        "date": "27.08.2020 17:03:09",
+        "totalPrice": 1.75,
+        "vatAmountBasic": 0.29,
+        "taxBaseBasic": 1.46
+    },
+    "O-F41E6A78F02F4E779E6A78F02FAE773C": {
+        "ico": "35793783",
+        "icdph": "SK2020279415",
+        "date": "11.09.2020 18:10:17",
+        "totalPrice": 40.45,
+        "vatAmountBasic": 6.74,
+        "taxBaseBasic": 33.71
+    }
+}

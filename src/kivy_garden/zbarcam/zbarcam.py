@@ -1,9 +1,6 @@
 import os
 from collections import namedtuple
 
-import json
-import requests
-
 import PIL
 from PIL import Image, ImageDraw
 from kivy.clock import Clock
@@ -164,7 +161,7 @@ class ZBarCam(AnchorLayout):
         """
         Postpones some setup tasks that require self.ids dictionary.
         """
-        # self._remove_shoot_button()
+        self._remove_shoot_button()
         # `self.xcamera._camera` instance may not be available if e.g.
         # the `CAMERA` permission is not granted
         self.xcamera.bind(on_camera_ready=self._on_camera_ready)
@@ -230,33 +227,17 @@ def on_symbols(instance, values):
 
     for symbol in values:
         qrId = symbol.data.decode("utf-8")
-        print('- qrcode: {}'.format(qrId))
         if(qrId not in instance.allScannedQR):
-            billInfo = getBillInfoFromEkasa(qrId)['receipt']
-            instance.allScannedQR[qrId] = {
-                "ico": billInfo['ico'],
-                "icdph": billInfo['icDph'],
-                "date": billInfo['issueDate'],
-                "totalPrice":billInfo['totalPrice'],
-                "vatAmountBasic":billInfo['vatAmountBasic'],
-                "taxBaseBasic":billInfo['taxBaseBasic'],
-            }
+            print('== New qrcode scanned: {}'.format(qrId))
+            instance.allScannedQR[qrId] = qrId
+            instance.parent.parent.parent.parent.addNewScanedCode(qrId)
+        else:
+            print('== Qrcode already saved: {}'.format(qrId))
 
-    print(json.dumps(instance.allScannedQR))
+    #print(json.dumps(instance.allScannedQR))
     # stop the detector if we found a symbol.
     # don't if you want continuous detection.
     if(len(values) > 0):
         instance.stop()
         instance.parent.ids.scanButton.disabled = False
         instance.parent.ids.stopButton.disabled = True
-
-def getBillInfoFromEkasa(qrId):
-    api_url = 'https://ekasa.financnasprava.sk/mdu/api/v1/opd/receipt/find'
-    headers = {'Content-Type': 'application/json'}
-    billInfo = {"receiptId": qrId}
-    response = requests.post(api_url, headers=headers,json=billInfo)
-    
-    if response.status_code == 200:
-        return json.loads(response.content.decode('utf-8'))
-    else:
-        return None

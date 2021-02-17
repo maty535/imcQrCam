@@ -1,0 +1,180 @@
+#:import ZBarCam kivy_garden.zbarcam.ZBarCam
+#: import main main
+
+<QrScannerRoot>:
+    carousel:       carousel
+    qrCodesView:    qrCodes
+    camView:        camera_view
+    detailView:     detail_view
+    
+    Carousel:
+        id: carousel
+        QRCodesView:
+            id: qrCodes
+        CamView:
+            id: camera_view
+        CodeDetailView:
+            id: detail_view
+
+
+<CodeDetailView>:
+    orientation: "vertical"
+    items_container: items_container
+
+    GridLayout:
+        cols: 2
+        row_force_default: True
+        row_default_height: 30
+        
+        Label:
+            markup: True
+            text: "[color=ff3333]Obchodník:[/color]"
+            text_size: self.size
+            font_size: "20dp"
+            size_hint_x: None
+            width: 120
+        Label:
+            text: "{}, {}".format(root.code['orgName'], root.code['unitName'])
+            font_size: "20dp"
+            text_size: self.size
+        Label:
+            markup: True
+            text_size: self.size
+            text: "[color=ff3333]Platba:[/color]"
+            font_size: "20dp"
+            size_hint_x: None
+            width: 120
+        Label:
+            text: "{} €".format(root.code['totalPrice'])
+            font_size: "20dp"
+            text_size: self.size
+        
+        Label:
+            markup: True
+            text_size: self.size
+            text: "[color=ff3333]DPH (20%):[/color]"
+            font_size: "20dp"
+            size_hint_x: None
+            width: 120
+        Label:
+            text: "{} €".format(root.code['vatAmountBasic'])
+            font_size: "20dp"
+            text_size: self.size
+
+        Label:
+            markup: True
+            text_size: self.size
+            text: "[color=ff3333]DPH (10%):[/color]"
+            font_size: "20dp"
+            size_hint_x: None
+            width: 120
+        Label:
+            text: "{} €".format(root.code['vatAmountReduced'])
+            font_size: "20dp"
+            text_size: self.size
+
+
+        Label:
+            markup: True
+            text_size: self.size
+            text: "[color=ff3333]Dátum:[/color]"
+            font_size: "20dp"
+            size_hint_x: None
+            width: 120
+        Label:
+            text: "{}".format(root.code['date'])
+            font_size: "20dp"
+            text_size: self.size
+        
+    ScrollView:
+        do_scroll_x: False
+        do_scroll_y: True
+        GridLayout:
+            cols: 2
+            orientation: "vertical"
+            id: items_container
+            size_hint_y: None
+            height: 400
+            row_default_height: 20
+  
+    BoxLayout:
+        orientation: "horizontal"
+        size_hint_y: None
+        height: "40dp"
+        Button:
+            text: "QR codes"
+            on_press: app.root.show_scannedCodes()
+        Button:
+            text: "Scan codes"
+            on_press: app.root.show_camera()
+
+
+<CamView@BoxLayout>:        
+    orientation: 'vertical'
+    ZBarCam:
+        id: zbarcam
+        # optional, by default checks all types
+        code_types:'QRCODE', 'EAN13'
+    
+    BoxLayout:
+        size_hint_y: None
+        height: '40dp'
+        Button:
+            id: scanButton
+            text: 'Scan a qrcode'
+            disabled: True
+            on_release: 
+                zbarcam.start()
+                scanButton.disabled = True
+                stopButton.disabled = False
+        Button:
+            id: stopButton
+            text: 'Stop detection'
+            on_release: 
+                zbarcam.stop()
+                scanButton.disabled = False
+                stopButton.disabled = True
+        Button:
+            id: listButton
+            text: 'List'
+            disabled: False
+            on_release:
+                app.root.show_scannedCodes()
+
+<QRCodesView@BoxLayout>:
+    orientation: "vertical"
+    qrList: qr_list
+    RecycleView:
+        id: qr_list
+        scroll_type: ['bars', 'content']
+        scroll_wheel_distance: dp(114)
+        bar_width: dp(10)
+        viewclass: 'CodeDetailButton'
+        data: []
+        SelectableRecycleBoxLayout:
+            color:(0, 0.7, 0.4, 0.8)
+            default_size: None, dp(56)
+            # defines the size of the widget in reference to width and height
+            default_size_hint: 0.4, None
+            size_hint_y: None
+            height: self.minimum_height
+            orientation: 'vertical' # defines the orientation of data items
+        # BEGIN CANCEL_BUTTON
+    BoxLayout:
+        orientation: "horizontal"
+        size_hint_y: None
+        height: "40dp"
+        Button:
+            text: "Scan QR code"
+            on_press: app.root.show_camera()
+        Button:
+            text: "Read bills from eKasa"
+            on_press: app.root.getDetailsFromEkasa()
+        Button:
+            text: "Settings"
+            on_press: app.open_settings()
+
+<CodeDetailButton>:
+    height: "40dp"
+    size_hint_y: None
+       

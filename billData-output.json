@@ -1,0 +1,542 @@
+{
+    "O-F040DFA794264EA080DFA794267EA0C7": {
+        "ico": "44512031",
+        "icdph": "SK2022722724",
+        "date": "23.12.2020 09:51:40",
+        "totalPrice": 61.26,
+        "vatAmountBasic": null,
+        "taxBaseBasic": null,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-344DEE80E95241AD8DEE80E952F1ADA0": {
+        "ico": "44512031",
+        "icdph": "SK2022722724",
+        "date": "21.12.2020 15:24:54",
+        "totalPrice": 16.44,
+        "vatAmountBasic": null,
+        "taxBaseBasic": null,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-1FB1D5BC77CB42AFB1D5BC77CB72AF87": {
+        "ico": "51231735",
+        "icdph": "SK7120001482",
+        "date": "05.12.2020 19:32:57",
+        "totalPrice": 17.44,
+        "vatAmountBasic": 2.91,
+        "taxBaseBasic": 14.53,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-C19E53F634ED416A9E53F634EDF16AC9": {
+        "ico": "46630228",
+        "icdph": "SK2023498565",
+        "date": "18.12.2020 12:08:47",
+        "totalPrice": 10.0,
+        "vatAmountBasic": 1.67,
+        "taxBaseBasic": 8.33,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-96017D59A29441D5817D59A29451D508": {
+        "ico": "51231735",
+        "icdph": "SK7120001482",
+        "date": "21.11.2020 17:35:44",
+        "totalPrice": 29.67,
+        "vatAmountBasic": 4.95,
+        "taxBaseBasic": 24.72,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-4B8E56CECAC94D2C8E56CECAC9CD2C44": {
+        "ico": "44872259",
+        "icdph": "SK2022857166",
+        "date": "13.11.2020 09:53:12",
+        "totalPrice": 57.43,
+        "vatAmountBasic": 9.57,
+        "taxBaseBasic": 47.87,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-EAAAB8955D8C43B1AAB8955D8C43B1B8": {
+        "ico": "36494160",
+        "icdph": "SK2021831988",
+        "date": "15.12.2020 08:14:37",
+        "totalPrice": 17.28,
+        "vatAmountBasic": 2.88,
+        "taxBaseBasic": 14.4,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-692044DE7AFF4A36A044DE7AFF0A36A3": {
+        "ico": "50812068",
+        "icdph": "SK2120483134",
+        "date": "17.12.2020 11:16:52",
+        "totalPrice": 6.8,
+        "vatAmountBasic": 1.13,
+        "taxBaseBasic": 5.67,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-F83D969092C24E5DBD969092C22E5D93": {
+        "ico": "31633200",
+        "icdph": "SK2020423680",
+        "date": "17.12.2020 12:02:01",
+        "totalPrice": 13.25,
+        "vatAmountBasic": 2.21,
+        "taxBaseBasic": 11.04,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-FD2DC5B5CB4446E4ADC5B5CB4426E47C": {
+        "ico": "44400578",
+        "icdph": "SK2022684378",
+        "date": "09.12.2020 09:10:52",
+        "totalPrice": 32.3,
+        "vatAmountBasic": 5.38,
+        "taxBaseBasic": 26.92,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-2D6DA97B87964072ADA97B8796207275": {
+        "ico": "35838949",
+        "icdph": "SK2020262684",
+        "date": "18.12.2020 19:48:20",
+        "totalPrice": 12.95,
+        "vatAmountBasic": 2.16,
+        "taxBaseBasic": 10.79,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-C36412E5BEBD4D66A412E5BEBD1D66A3": {
+        "ico": "35838949",
+        "icdph": "SK2020262684",
+        "date": "05.12.2020 19:55:46",
+        "totalPrice": 9.98,
+        "vatAmountBasic": 1.66,
+        "taxBaseBasic": 8.32,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-96C07C6F44454A88807C6F4445FA88DB": {
+        "ico": "36478598",
+        "icdph": "SK2020009343",
+        "date": "21.12.2020 15:32:56",
+        "totalPrice": 19.2,
+        "vatAmountBasic": 3.2,
+        "taxBaseBasic": 16.0,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-DDEAFC2CA8AA4186AAFC2CA8AAC18692": {
+        "ico": "44400578",
+        "icdph": "SK2022684378",
+        "date": "22.12.2020 09:29:38",
+        "totalPrice": 23.12,
+        "vatAmountBasic": 3.85,
+        "taxBaseBasic": 19.27,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-C65EE546A3E647B09EE546A3E687B020": {
+        "ico": "33276714",
+        "icdph": "SK1020771609",
+        "date": "07.12.2020 09:26:49",
+        "totalPrice": 25.4,
+        "vatAmountBasic": 4.23,
+        "taxBaseBasic": 21.17,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-B79F5BF4948943A79F5BF4948903A73C": {
+        "ico": "51231735",
+        "icdph": "SK7120001482",
+        "date": "22.12.2020 16:01:34",
+        "totalPrice": 15.73,
+        "vatAmountBasic": 2.62,
+        "taxBaseBasic": 13.11,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-100AA52247DC4EF28AA52247DC8EF25E": {
+        "ico": "44512031",
+        "icdph": "SK2022722724",
+        "date": "16.09.2020 10:01:15",
+        "totalPrice": 9.17,
+        "vatAmountBasic": 1.53,
+        "taxBaseBasic": 7.64,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-3B9F109D9552440A9F109D9552D40AB4": {
+        "ico": "35457112",
+        "icdph": "SK1020669727",
+        "date": "18.09.2020 11:22:01",
+        "totalPrice": 7.5,
+        "vatAmountBasic": 1.25,
+        "taxBaseBasic": 6.25,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-B5C03C09EDA9441B803C09EDA9141B77": {
+        "ico": "31633200",
+        "icdph": "SK2020423680",
+        "date": "02.09.2020 15:40:11",
+        "totalPrice": 15.14,
+        "vatAmountBasic": 2.52,
+        "taxBaseBasic": 12.62,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-C08EF9250DF04BEC8EF9250DF07BEC07": {
+        "ico": "32938071",
+        "icdph": "SK1020756363",
+        "date": "05.10.2020 09:47:03",
+        "totalPrice": 10.02,
+        "vatAmountBasic": 1.67,
+        "taxBaseBasic": 8.35,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-CC7777551A1C4C2EB777551A1CBC2E44": {
+        "ico": "36501921",
+        "icdph": "SK2021946245",
+        "date": "30.11.2020 09:07:29",
+        "totalPrice": 28.36,
+        "vatAmountBasic": 4.73,
+        "taxBaseBasic": 23.63,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-D78E95F9E54E4F0F8E95F9E54E1F0F74": {
+        "ico": "44512031",
+        "icdph": "SK2022722724",
+        "date": "29.09.2020 14:16:26",
+        "totalPrice": 42.45,
+        "vatAmountBasic": 7.08,
+        "taxBaseBasic": 35.37,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-FF71553B3CD240A4B1553B3CD260A49C": {
+        "ico": "51231735",
+        "icdph": "SK7120001482",
+        "date": "27.11.2020 18:54:05",
+        "totalPrice": 45.24,
+        "vatAmountBasic": 7.54,
+        "taxBaseBasic": 37.7,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-C1319798D5E24A11B19798D5E22A1143": {
+        "ico": "51231735",
+        "icdph": "SK7120001482",
+        "date": "25.11.2020 14:34:23",
+        "totalPrice": 343.05,
+        "vatAmountBasic": 57.18,
+        "taxBaseBasic": 285.87,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-56FDD462F122404FBDD462F122704F2F": {
+        "ico": "30651638",
+        "icdph": "SK1020742030",
+        "date": "27.11.2020 10:17:09",
+        "totalPrice": 60.41,
+        "vatAmountBasic": 10.07,
+        "taxBaseBasic": 50.34,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "V-EA1170A9B0154E059170A9B0156E05B0": {
+        "ico": "50581341",
+        "icdph": "SK2120395585",
+        "date": "11.11.2020 08:57:44",
+        "totalPrice": 670.0,
+        "vatAmountBasic": 111.67,
+        "taxBaseBasic": 558.33,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-473950A48F074A92B950A48F075A9234": {
+        "ico": "48258946",
+        "icdph": "SK2120131651",
+        "date": "20.11.2020 11:07:15",
+        "totalPrice": 109.98,
+        "vatAmountBasic": 18.33,
+        "taxBaseBasic": 91.65,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-6237196ACD4C4D44B7196ACD4C6D447C": {
+        "ico": "36505561",
+        "icdph": "SK2022002059",
+        "date": "14.11.2020 08:34:16",
+        "totalPrice": 63.73,
+        "vatAmountBasic": 10.62,
+        "taxBaseBasic": 53.11,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-B5D79C3A6C6345EE979C3A6C6365EE81": {
+        "ico": "33276714",
+        "icdph": "SK1020771609",
+        "date": "18.12.2020 12:11:51",
+        "totalPrice": 279.71,
+        "vatAmountBasic": 46.62,
+        "taxBaseBasic": 233.09,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-80EDA6669E8A4E1FADA6669E8A2E1FAC": {
+        "ico": "44512031",
+        "icdph": "SK2022722724",
+        "date": "11.01.2021 09:19:19",
+        "totalPrice": 10.83,
+        "vatAmountBasic": null,
+        "taxBaseBasic": null,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-638B9831254342408B98312543124045": {
+        "ico": "52462129",
+        "icdph": "SK2121043463",
+        "date": "18.12.2020 13:31:50",
+        "totalPrice": 75.74,
+        "vatAmountBasic": 13.48,
+        "taxBaseBasic": 67.38,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-741CFB195AA942399CFB195AA93239DB": {
+        "ico": "31321828",
+        "icdph": "SK7020000317",
+        "date": "07.12.2020 21:21:29",
+        "totalPrice": 16.89,
+        "vatAmountBasic": 2.82,
+        "taxBaseBasic": 14.07,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-2756E037D46C410B96E037D46C510B55": {
+        "ico": "31321828",
+        "icdph": "SK7020000317",
+        "date": "04.12.2020 20:14:39",
+        "totalPrice": 27.8,
+        "vatAmountBasic": 4.63,
+        "taxBaseBasic": 23.17,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-B1933A6F2EAB4246933A6F2EAB5246A4": {
+        "ico": "36477630",
+        "icdph": "SK2020009233",
+        "date": "07.12.2020 13:19:05",
+        "totalPrice": 18.19,
+        "vatAmountBasic": 3.03,
+        "taxBaseBasic": 15.16,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-04363CCAE8144DECB63CCAE8149DEC3B": {
+        "ico": "35712783",
+        "icdph": "SK2020227616",
+        "date": "07.12.2020 14:02:29",
+        "totalPrice": 11.99,
+        "vatAmountBasic": 2.0,
+        "taxBaseBasic": 9.99,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-1E37E2E5FC29440CB7E2E5FC29C40C20": {
+        "ico": "35838949",
+        "icdph": "SK2020262684",
+        "date": "05.12.2020 12:18:38",
+        "totalPrice": 2.58,
+        "vatAmountBasic": 0.43,
+        "taxBaseBasic": 2.15,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-7066A46C094D4036A6A46C094D8036CB": {
+        "ico": "36495336",
+        "icdph": "SK2021846629",
+        "date": "05.12.2020 09:47:22",
+        "totalPrice": 8.5,
+        "vatAmountBasic": 1.42,
+        "taxBaseBasic": 7.08,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-B91D8CDB9A074B7B9D8CDB9A077B7B54": {
+        "ico": "35739487",
+        "icdph": "SK2020270186",
+        "date": "05.12.2020 10:06:01",
+        "totalPrice": 5.99,
+        "vatAmountBasic": 1.0,
+        "taxBaseBasic": 4.99,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-F017B05C29FB477B97B05C29FB777BC7": {
+        "ico": "45952671",
+        "icdph": "SK2023150701",
+        "date": "01.12.2020 16:27:15",
+        "totalPrice": 48.0,
+        "vatAmountBasic": 8.0,
+        "taxBaseBasic": 40.0,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-6BDEEF08E2FF45309EEF08E2FF85301F": {
+        "ico": "35838949",
+        "icdph": "SK2020262684",
+        "date": "01.12.2020 17:42:00",
+        "totalPrice": 12.03,
+        "vatAmountBasic": 2.01,
+        "taxBaseBasic": 10.02,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-16266ED370D44BBCA66ED370D45BBC04": {
+        "ico": "36495336",
+        "icdph": "SK2021846629",
+        "date": "05.12.2020 09:35:02",
+        "totalPrice": 10.5,
+        "vatAmountBasic": 1.75,
+        "taxBaseBasic": 8.75,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-146D9117114349F7AD9117114389F7D2": {
+        "ico": "35712783",
+        "icdph": "SK2020227616",
+        "date": "27.10.2020 15:15:25",
+        "totalPrice": 129.0,
+        "vatAmountBasic": 21.5,
+        "taxBaseBasic": 107.5,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-3D9C6FD332C84D429C6FD332C8AD4233": {
+        "ico": "51231735",
+        "icdph": "SK7120001482",
+        "date": "12.12.2020 13:36:37",
+        "totalPrice": 19.97,
+        "vatAmountBasic": 3.33,
+        "taxBaseBasic": 16.64,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-F637C0757DB34CF9B7C0757DB33CF947": {
+        "ico": "45503249",
+        "icdph": "SK2023008911",
+        "date": "16.12.2020 16:35:18",
+        "totalPrice": 8.35,
+        "vatAmountBasic": 1.39,
+        "taxBaseBasic": 6.96,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-9A400F46005E4610800F46005E06100D": {
+        "ico": "35838949",
+        "icdph": "SK2020262684",
+        "date": "02.12.2020 19:10:09",
+        "totalPrice": 263.4,
+        "vatAmountBasic": 43.9,
+        "taxBaseBasic": 219.5,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-D1A703B109064F97A703B10906EF9712": {
+        "ico": "36280518",
+        "icdph": "SK2022137249",
+        "date": "16.12.2020 16:50:54",
+        "totalPrice": 24.9,
+        "vatAmountBasic": 4.15,
+        "taxBaseBasic": 20.75,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-22AF7DB4636A45D3AF7DB4636AA5D30B": {
+        "ico": "44404263",
+        "icdph": "SK2022678009",
+        "date": "22.09.2020 11:46:21",
+        "totalPrice": 31.37,
+        "vatAmountBasic": 5.23,
+        "taxBaseBasic": 26.14,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-36AF9DABD80C4272AF9DABD80C0272B6": {
+        "ico": "35793783",
+        "icdph": "SK2020279415",
+        "date": "08.12.2020 14:49:26",
+        "totalPrice": 24.72,
+        "vatAmountBasic": 3.88,
+        "taxBaseBasic": 19.4,
+        "vatAmountReduced": 0.13,
+        "vatRateReduced": 10.0
+    },
+    "O-2594042C602941FE94042C602961FE92": {
+        "ico": "51231735",
+        "icdph": "SK7120001482",
+        "date": "23.12.2020 15:09:39",
+        "totalPrice": 5.16,
+        "vatAmountBasic": 0.86,
+        "taxBaseBasic": 4.3,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-2DC1DED85D8949F681DED85D89A9F6A3": {
+        "ico": "52462129",
+        "icdph": "SK2121043463",
+        "date": "24.11.2020 15:21:07",
+        "totalPrice": 61.05,
+        "vatAmountBasic": 10.89,
+        "taxBaseBasic": 54.48,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-A8D3FB197C464CB893FB197C46ECB81E": {
+        "ico": "17125634",
+        "icdph": "SK1020764074",
+        "date": "09.09.2020 18:40:44",
+        "totalPrice": 10.45,
+        "vatAmountBasic": 1.74,
+        "taxBaseBasic": 8.71,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-141613B69C694FEA9613B69C694FEAD7": {
+        "ico": "35838949",
+        "icdph": "SK2020262684",
+        "date": "10.09.2020 19:29:35",
+        "totalPrice": 87.09,
+        "vatAmountBasic": 14.52,
+        "taxBaseBasic": 72.57,
+        "vatAmountReduced": 0.0,
+        "vatRateReduced": 10.0
+    },
+    "O-8BEFE9EEC6E34B42AFE9EEC6E38B420D": {
+        "ico": "36782637",
+        "icdph": "SK2022382527",
+        "date": "14.10.2020 09:28:31",
+        "totalPrice": 75.0,
+        "vatAmountBasic": 12.5,
+        "taxBaseBasic": 62.5,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    },
+    "O-5EB2238729A24245B2238729A2E245BC": {
+        "ico": "36484610",
+        "icdph": "SK2020015206",
+        "date": "05.03.2020 09:20:50",
+        "totalPrice": 3.3,
+        "vatAmountBasic": 0.55,
+        "taxBaseBasic": 2.75,
+        "vatAmountReduced": null,
+        "vatRateReduced": null
+    }
+}
